@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+
+<body>
+    <hr>
+    <form action="/signup" method="post">
+        <div style="display: block"> 
+            <input type="text" name="name" value="Hendrik">
+            <input type="text" name="email" value="frentrup@imperial.ac.uk">
+            <input type="text" name="username" value="hendrik">
+            <input type="password" name="password" value="makeitrain">
+            <input type="password" name="repeat" value="makeitrain">
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+    <hr>
+</body>
+
+</html>

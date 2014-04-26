@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+</head>
+
+<body>
+
+    Hi {{ name }}
+    <br>
+    You're account has been created.<br>
+    We've sent a confirmation to "{{ email }}"
+
+</body>
+</html>
+{% endautoescape %}
