@@ -9,12 +9,13 @@
     <hr>
     <form action="/login" method="post">
         <div>
-            <input type="text" name="username" value="Username">
-            <input type="password" name="password" value="Password">
+            <input type="text" name="username" value="{{ username }}"> {{ user_error }}
+            <input type="password" name="password" value="Password"> {{ pw_error }}
             <input type="submit" value="Log In">
         </div>
     </form>
     <hr>
+    No account yet? <a href="/signup"> Sign me up! </a>
 </body>
 
 </html>

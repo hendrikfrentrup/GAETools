@@ -9,14 +9,15 @@
     <hr>
     <form action="/signup" method="post">
         <div style="display: block"> 
-            <input type="text" name="name" value="Enter your full name">
-            <input type="text" name="email" value="Enter a valid email">
-            <input type="text" name="username" value="Enter your username">
-            <input type="password" name="password" value="Passord">
-            <input type="password" name="repeat" value="Password">
+            <input type="text" name="name" value="{{ name }}">
+            <input type="text" name="email" value="{{ email }}">
+            <input type="text" name="username" value="{{ username }}">
+            <input type="password" name="password" value="{{ password }}">
+            <input type="password" name="repeat" value="{{ password }}">
             <input type="submit" value="Sign Up">
         </div>
     </form>
+    {{ pw_error }}
     <hr>
 </body>
 
