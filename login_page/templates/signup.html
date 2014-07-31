@@ -17,7 +17,9 @@
             <input type="submit" value="Sign Up">
         </div>
     </form>
-    {{ pw_error }}
+    {% for err in errors %}
+    <div>{{ err }}</div>
+    {% endfor%}
     <hr>
 </body>
 

@@ -10,8 +10,10 @@
     <form action="/login" method="post">
         <div>
             <input type="text" name="username" value="{{ username }}"> {{ user_error }}
-            <input type="password" name="password" value="Password"> {{ pw_error }}
+            <input type="password" name="password" value="{{ password }}"> {{ pw_error }}
             <input type="submit" value="Log In">
+            Remember me!
+            <input type="checkbox" checked="yes" name="remember" value="yes">
         </div>
     </form>
     <hr>
