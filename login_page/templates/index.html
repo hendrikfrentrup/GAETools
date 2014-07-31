@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
 
-<head>
-</head>
+{% block content %}
 
-<body>
   {{ message }}
   <hr>
     <a href='/login'>Log-in</a>
     <a href='/signup'>Sign-Up</a>
   <hr>
-</body>
 
-</html>
+{% endblock %}

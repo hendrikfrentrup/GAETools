@@ -1,2 +1,26 @@
 input {display:block;}
 
+#container{
+display: block;
+}
+
+#header{
+position: absolute;
+height: 60px;
+width: 90%;
+background-color: #999999;
+}
+
+#menu{
+position: absolute
+height: 60px
+width: 90%
+background-color: #CCCCCC;
+}
+
+#footer{
+position: absolute;
+height: 60px;
+width: 90%;
+background-color: #666666;
+}
