@@ -1,0 +1,35 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" />  
+
+<!--
+<script src="jquery.js" type="text/javascript" charset="utf-8"></script>  
+<script src="jquery.cookie.js" type="text/javascript" charset="utf-8"></script>  
+<script src="poll.js" type="text/javascript" charset="utf-8"></script> 
+-->
+
+<head>
+
+
+<body>
+
+<div id="poll-container">  
+    <h3>Poll</h3>  
+    <form id='poll' action="poll.php" method="post" accept-charset="utf-8">  
+        <p>{{question}}</p>  
+        <p>
+        <input type="radio" name="poll" value="opt1" id="opt1" /><label for='opt1'>&nbsp;jQuery</label><br />  
+        <input type="radio" name="poll" value="opt2" id="opt2" /><label for='opt2'>&nbsp;Ext JS</label><br />  
+        <input type="radio" name="poll" value="opt3" id="opt3" /><label for='opt3'>&nbsp;Dojo</label><br />  
+        <input type="radio" name="poll" value="opt4" id="opt4" /><label for='opt4'>&nbsp;Prototype</label><br />  
+        <input type="radio" name="poll" value="opt5" id="opt5" /><label for='opt5'>&nbsp;YUI</label><br />  
+        <input type="radio" name="poll" value="opt6" id="opt6" /><label for='opt6'>&nbsp;mootools</label><br /><br />  
+
+        <input type="submit" value="Vote &rarr;" />
+        </p>  
+    </form>  
+</div> 
+
+</body>
+
+</html>

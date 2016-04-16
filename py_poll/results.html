@@ -1,0 +1,20 @@
+<div id='poll-container'>
+<div id='poll-results'>
+<h3>Poll Results</h3>
+
+<dl class='graph'>
+{% i=0 %}
+{% for a in answers: %}
+<dt class='bar-title'>{{a[1]}}</dt>
+<dd class='bar-container'><div id='bar.{{a[0]}}' style='width:75%; background-color:#111111; color:#000000'>&nbsp;</div><strong>{{votes[i]}} %</strong></dd>
+{% i+=1 %}
+{% endfor %}
+</dl>
+
+<p>Total Votes: {{total_votes}}</p>
+
+<p><a href='localhost:8000'>Home</a></p>
+
+</div>
+</div>
+

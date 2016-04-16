@@ -1,0 +1,38 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css" />  
+
+<!--
+<script src="jquery.js" type="text/javascript" charset="utf-8"></script>  
+<script src="jquery.cookie.js" type="text/javascript" charset="utf-8"></script>  
+<script src="poll.js" type="text/javascript" charset="utf-8"></script> 
+-->
+
+<head>
+
+
+<body>
+
+
+<div id="poll-container">  
+    <h3>Today's Poll ;-)</h3>  
+    <form id='poll' method="post">  
+        <p>{{question}}</p>  
+        <p>
+        {% for a in answers: %}
+        <input type="radio" name="poll" value="opt{{loop.index}}" id="opt{{loop.index}}" />
+        <label for='opt{{loop.index}}'>&nbsp;{{a}}</label>  <br />  
+        {% endfor %}
+
+        <input type="submit" value="Vote &rarr;" />
+        </p>  
+    </form>  
+</div> 
+
+
+<div id="error">{{error}}</div>
+
+
+</body>
+
+</html>

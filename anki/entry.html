@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <body>
+
+
+    <form action="/enter" method="post">
+      <div><input value="Your word to be submitted" name="word"></div>
+      <div><textarea value="Write an example sentence" name="sentence" rows="3" cols="60"></textarea></div>
+      <div><input value="Translation of the word" name="translation"></div>
+      <div><input type="submit" value="Submit Entry"></div>
+    </form>
+
+  </body>
+</html>
+{% endautoescape %}

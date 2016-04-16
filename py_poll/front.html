@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head><title>This is LORP</title>
+  </head>
+
+  <body>
+	<h1 style="font-size:8px;">This is LORP!</h1>
+	<h2>Questions:</h2>
+
+
+
+   <table border="1">
+    <tr>
+     <th>Here is a list of questions</th>
+     <th>Answer 1</th>
+     <th>Answer 2</th>
+     <th># Answers</th>
+     <th>Show</th>
+     <th>Answer</th>
+    </tr>
+   {% for question in questions %}
+    <tr class="question">
+     <td>{{question.question}}</td>
+     <td>{{question.answer1}}</td>
+     <td>{{question.answer2}}</td>
+     <td>..._...</td>
+     <td>to answer stats...</td>
+     <td>to answer form...</td>
+    </tr>
+   {% endfor %}
+   </table>
+
+   <!--**<td>question.answer1 + question.answer2</td>**//-->
+
+   <hr>
+
+
+    <form method="post">
+
+     <label>
+      <div>
+       Your question:
+       <input type="text" name="question" value="{{question}}">
+       <br>
+       The answers:
+       <input type="text" name="answer1" value="{{answer1}}">
+       <input type="text" name="answer2" value="{{answer2}}">
+       <input type="submit">
+      </div>
+
+     </label>
+ 
+      <div class="error">{{error}}</div>
+
+    </form>
+
+
+  </body>
+</html>

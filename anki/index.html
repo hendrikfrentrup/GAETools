@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <body>
+  Here are your translations:
+  <br>
+    {% for entry in entries %}
+       <b>{{ entry.word }}</b> - {{ entry.translation }}
+       <br>
+    {% endfor %}
+  <a href='/enter'>Submit an entry</a>  
+  </body>
+</html>
+{% endautoescape %}
