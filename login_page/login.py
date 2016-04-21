@@ -32,6 +32,15 @@ class User(ndb.Model):
     signupdate = ndb.DateTimeProperty(auto_now_add=True)
 
 
+class Challenge(ndb.Model):
+    creationdate = ndb.DateTimeProperty(auto_now_add=True)
+    enddate = ndb.DateTimeProperty()
+    definition = ndb.StringProperty()
+    stake = ndb.FloatProperty()
+    #originator = 
+    #challenger = 
+    #check = 
+
 
 def get_user(username):
     # query database and return user if exisiting
