@@ -1,0 +1,53 @@
+{% extends "base_in.html" %}
+
+{% block content %}
+
+        <hr>
+        <form action="/create" method="post">
+            <div style="display: block">
+
+                I will challenge
+
+                <br><br>
+
+                <input id="challenger" type="input" name="challenger" placeholder="Username" value="{{ challenger }}">
+                <br> or enter <label for="challenger">Email:</label>
+                <input id="challenger" type="input" name="challenger_email" placeholder="challenge@me.now" value="{{ email }}"> 
+
+                <br><br>
+
+                Describe your challenge:
+                <br>
+                <textarea  rows="4" cols="45" name="definition">{{ example }}</textarea>
+                <br><br>
+                
+                What are the stakes: <label for="stake">£</label>
+                <input id="stake" type="input" name="stake" value="{{ amount }}">
+                <br>
+                
+                How long will the challenge last: <label for="duration">Weeks:</label>
+                <select id="duration" name="duration">
+                    <option value="1">1 week</option>
+                    <option value="2">2 weeks</option>
+                    <option value="3">3 weeks</option>
+                    <option value="4">4 weeks</option>
+                </select>
+                <br>
+                
+                <p style="color: {{ color }}">
+                <input id="oath" type="checkbox" style="display: inline" name="oath" value="yes">
+                I solemnly swear to donate this amount to charity if I lose this challenge!
+                </p><br>
+                <input type="submit" value="Create this challenge">
+            </div>
+        </form>
+        {% for err in errors %}
+        <div><p>{{ err }}</p></div>
+        {% endfor%}
+        <hr>
+
+        <a href='/logout'>Log-out</a>
+
+        <hr>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base_in.html" %}
+
+{% block content %}
+  
+        {% if challenges %}  
+            <p><h2>{{ message }}</h2></p>
+            <ul>
+                {% for challenge in challenges %}
+                    <li class="challenge_item">You are challenging {{ challenge.challenger}} for £{{ challenge.stake }}! <br> Challenge: <p>{{ challenge.definition}} </p></li>
+                {% endfor%}
+            </ul>
+        {% endif %}        
+  
+<!--        <hr>-->
+        
+        {% if challenged %}
+            <p>Oh, and don't forget you've been challenged to the following:</p>
+            <ol>
+                {% for challenge in challenged %}
+                    <li class="challenge_item">You've been challenged by {{ challenge.originator_ID}} for £{{ challenge.stake }}! <br> Challenge: {{ challenge.definition}} </li>
+                {% endfor%}
+            </ol>
+        {% endif %}
+
+        <hr>
+
+        <div>
+            <a href='/create'>Creat a new challenge</a>
+        </div>
+        
+        <hr>
+<!--        <a href='/logout'>Log-out</a>-->
+<!--        <hr>-->
+
+{% endblock %}

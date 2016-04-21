@@ -1,0 +1,21 @@
+{% extends "base_out.html" %}
+
+{% block content %}
+
+        <hr>
+        <form action="/signup" method="post">
+            <div style="display: block"> 
+                <input type="text" name="name" value="{{ name }}" placeholder="Enter your full name">
+                <input type="text" name="email" value="{{ email }}" placeholder="Enter a valid email">
+                <input type="text" name="username" value="{{ username }}" placeholder="Enter your username (alphanumeric, for now)">
+                <input type="password" name="password" placeholder="Enter your password (alphanumeric, for now)">
+                <input type="password" name="repeat" placeholder="Repeat your password please">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        {% for err in errors %}
+        <div>{{ err }}</div>
+        {% endfor%}
+        <hr>
+
+{% endblock %}

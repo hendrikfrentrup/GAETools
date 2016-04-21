@@ -1,0 +1,93 @@
+input {display:block;}
+
+body {
+font:15px arial,sans-serif;
+font-style:bold;
+}
+
+.container {
+position: relative;
+display: block;
+width: 100%;
+}
+
+#header {
+position: fixed;
+top: 0px;
+right: 0px;
+left: 0px;
+height: 44px;
+width: 100%;
+background-color: #FF9900;
+/*padding: 3px;*/
+}
+
+#footer {
+position: fixed;
+bottom: 0px;
+right: 0px;
+left: 0px;
+height: 30px;
+width: 100%;
+background-color: #33CCFF;
+color: #FFFFFF;
+}
+
+#main {
+position: relative;
+top: 60px;
+}
+
+
+
+
+
+ul#menu {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 11px;
+    float: right;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: black;
+    background-color: #FFE6B2;
+}
+
+
+#oath{display: inline}
+#challenger{display: inline}
+
+#stake {
+display: inline;
+width: 50px;
+}
+#duration {
+display: inline;
+width: 90px;
+}
+
+
+
+.challenge_item {
+height: 80px;
+font-size: 20px;
+font-style: bold;
+}
+
+
+
+
